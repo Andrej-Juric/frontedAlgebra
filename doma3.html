@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Domaća zadaća 3</title>
+  </head>
+  <body>
+    <h2 style="color: rgb(218, 2, 110)">Klikni za nagradu!</h2>
+    <input
+      type="button"
+      onclick="alert('Nema nikakve nagrade! :)')"
+      value="Pritisni me!"
+    />
+
+    <form>
+      <p style="color: rgb(218, 2, 110)">
+        Dobrodošli u virtualni svijet.<br /><br />Molimo Vas, prijavite se u
+        sustav.
+      </p>
+      <label for="ime">Ime:</label><br />
+      <input type="text" id="ime" name="ime" /><br />
+      <label for="prezime">Prezime:</label><br />
+      <input type="text" id="prezime" name="prezime" /><br /><br />
+      <input
+        type="submit"
+        value="Prijavi se u matricu"
+      /><br /><br /><br /><br />
+
+      <p>Kojoj dobnoj skupini pripadate?</p>
+      <input type="radio" id="mladeGodine" name="godine" value="25-" />
+      <label for="mladeGodine">Manje od 25 godina</label><br />
+      <input type="radio" id="srednjeGodine" name="godine" value="25+" />
+      <label for="srednjeGodine">Više od 25 godina</label><br />
+      <input type="radio" id="starijeGodine" name="godine" value="40+" />
+      <label for="starijeGodine"> Više od 40 godina</label><br /><br />
+      <input type="submit" value="Prijavi" /><br /><br /><br /><br />
+
+      <p>Koji su Vaši hobiji?</p>
+      <input type="checkbox" id="plivanje" name="plivanje" value="Plivanje" />
+      <label for="plivanje"> Plivanje</label><br />
+      <input
+        type="checkbox"
+        id="Biciklizam"
+        name="Biciklizam"
+        value="Biciklizam"
+      />
+      <label for="Biciklizam"> Biciklizam</label><br />
+      <input type="checkbox" id="Tenis" name="Tenis" value="Tenis" />
+      <label for="Tenis"> Tenis </label><br />
+
+      <input
+        type="checkbox"
+        id="Planinarenje"
+        name="Planinarenje"
+        value="Plivanje"
+      />
+      <label for="Planinarenje"> Planinarenje</label><br /><br />
+      <input type="submit" value="Submit" /><br /><br /><br /><br />
+
+      <p>Unesite datum rođenja:</p>
+      <label for="rođendan">Rođendan (datum i vrijeme):</label><br />
+      <input type="datetime-local" id="rođendan" name="rođendan" /><br /><br />
+      <input type="submit" value="Potvrdi" /><br /><br /><br /><br />
+
+      <label for="email">Unesite svoj email:</label><br />
+      <input type="email" id="email" name="email" /><br /><br />
+      <input type="submit" value="Pošalji" /><br /><br /><br /><br />
+
+      <p>Molimo Vas, pošaljite nam svoju fotografiju</p>
+      <label for="mojdokument">Izaberite fotografiju:</label>
+      <input type="file" id="mojdokument" name="mojdokument" /><br /><br />
+      <input type="submit" value="Upload" /><br /><br /><br /><br />
+
+      <p>Koliko djece imate?</p>
+      <label for="quantity">Broj djece (između 0 i 10):</label>
+      <input type="number" id="quantity" name="quantity" min="0" max="10" />
+      <input type="submit" value="Potvrdi" /><br /><br />
+
+      <small style="color: rgb(190, 88, 3)"
+        >*ako je odgovor 5 ili više - klik!</small
+      >
+      <input
+        type="button"
+        onclick="alert('Svaka čast!')"
+        value="Pritisni me!"
+      /><br /><br /><br /><br />
+
+      <p>Koji med najčešće konzumirate?</p>
+      <input list="med" name="med" />
+      <datalist id="med">
+        <option value="Bagrem"></option>
+        <option value="Cvjetni"></option>
+        <option value="Suncokret"></option>
+        <option value="Kesten"></option>
+        <option value="Uljana repica"></option>
+      </datalist>
+
+      <input type="submit" value="Potvrdi" />
+    </form>
+  </body>
+</html>

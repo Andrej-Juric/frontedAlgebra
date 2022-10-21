@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forme</title>
+  </head>
+  <body>
+    <form
+      action="#"
+      method="GET"
+      enctype="text/plain"
+      autocomplete="on"
+      oninput='umnozak.value=(parseInt(faktor1.value)*parseInt(faktor2.value))+" kn zarade"'
+    >
+      <fieldset>
+        <legend>Osobni podaci:</legend>
+        <label for="ime">Ime:</label>
+        <input type="text" name="ime" id="ime" /> <br /><br />
+
+        <p>Odaberite spol</p>
+        <input type="radio" name="spol" id="spolMusko" value="M" />
+        <label for="spolMusko">Muško</label><br />
+        <input type="radio" name="spol" id="spolŽensko" value="Z" />
+        <label for="spolŽensko">Žensko</label><br />
+        <input type="radio" name="spol" id="spolSvemirac" value="S" />
+        <label for="spolSvemirac">Svemirac</label>
+      </fieldset>
+      <br /><br />
+
+      <p>Koja vozila posjedujete?</p>
+
+      <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+      <label for="vehicle1"> Bicikl</label><br />
+      <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
+      <label for="vehicle2"> Auto</label><br />
+      <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
+      <label for="vehicle3"> Brod</label><br /><br />
+      <input
+        type="submit"
+        value="Pošalji podatke sudbi"
+      /><br /><br /><br /><br />
+      <p>Koja vam je najdraža boja?</p>
+      <label for="boja">Odaberite boju:</label>
+      <select id="boja" name="boja">
+        <optgroup label="Tople boje">
+          <option value="plava">Plava</option>
+          <option value="crvena">Crvena</option>
+        </optgroup>
+        <optgroup label="Hladne boje">
+          <option selected value="žuta">Žuta</option>
+          <option value="zelena">Zelena</option>
+        </optgroup>
+        <input type="submit" value="Pošalji podatke sudbi" /><br /><br />
+      </select>
+      <p>Unesite svoj clanak:</p>
+      <textarea
+        name="message"
+        style="width: 300px; height: 150px; background-color: rgb(13, 196, 202)"
+      >
+Prostor za unos poruke.
+        </textarea
+      >
+      <br /><br />
+      <input type="submit" /><br /><br />
+
+      <label for="grad">Odaberite grad u kojem trenutno živite:</label><br />
+      <input list="gradovi" name="grad" id="grad" />
+      <datalist id="gradovi">
+        <option value="Šibenik">Šibenik</option>
+        <option value="Beli Manastir">Beli Manastir</option>
+        <option value="Rovinj">Rovinj</option>
+      </datalist>
+      <input type="submit" value="Pošalji podatke sudbi" />
+      <br />
+      <br />
+
+      <p style="color: rgb(103, 8, 158)">Isprobaj množenje:</p>
+      <input type="text" name="faktor1" id="faktor1" /> (radnih sati) *
+      <input type="text" name="faktor2" id="faktor2" /> (cijena sata) =
+      <output name="umnozak" for="faktor1 faktor2"></output><br /><br /><br />
+      <input type="submit" value="Pošalji podatke sudbi" /><br /><br /><br />
+    </form>
+  </body>
+</html>
