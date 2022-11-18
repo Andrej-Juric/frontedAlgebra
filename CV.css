@@ -1,0 +1,37 @@
+.povratak {
+    text-align: center;
+    
+}
+body {
+    font-family: 'Crete Round', Verdana, sans-serif;
+}
+h1, p {
+    text-align: center;
+  
+  
+  justify-content: center;
+}
+.uvod {
+    position: relative;
+}
+.element0 {
+    font-style: italic;
+}
+.element1 {
+    color: rgb(111, 15, 201);
+}
+#element2 {
+    color: rgb(73, 73, 161);
+}
+h1 {
+    text-shadow: 5px 0px 5px;
+    color: rgb(122, 18, 82);
+    
+}
+.jezik {
+    font-style: italic;
+    color: rgb(150, 14, 93);
+}
+.podnozje {
+    background-color: blueviolet;
+}

@@ -1,0 +1,77 @@
+body {
+    font-family: 'Crete Round', Verdana, sans-serif;
+    background-image: url(./multimedianova/pozadina2.png);
+    background-size: cover;
+    background-position: center;
+}
+.naslovi {
+    height: 100vh;
+    width: 100%;
+    
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.ime {
+    color: white;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+span {
+    color: rgb(136, 0, 0);
+    
+}
+nav ul li {
+list-style-type: none;
+display: inline-block;
+padding: 10px 25px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color: rgb(136, 0, 0);
+}
+.uvod {
+    color: white;
+    position: absolute;
+    padding-left: 5%;
+    padding-top: 10%;
+}
+
+
+.omeni {
+    width: 100%;
+    padding: 100px 0px;
+    
+}
+.omeni img {
+    width: 250px;
+    height: 350px;
+}
+.tekst {
+    width: 600px;
+    
+    
+}
+
+
+.mojaslika{
+    width: 1000px;
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+}
+.omeni p {
+    color: rgb(252, 252, 252);
+    
+}
