@@ -1,0 +1,30 @@
+div {
+    animation-name: my-animation;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+    width: 300px;
+    height: 100px;
+    border-radius: 10px;
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    margin-left: auto;
+    margin-right: auto; 
+  
+  }
+  
+  @keyframes my-animation {
+    from {
+      background-color: #7c0e64;
+      width: 300px;
+      top: 10px;
+    }
+    to {
+      background-color: #9e2d19;
+      width: 50px;
+      top: 100px;
+    }
+  }
