@@ -33,10 +33,15 @@ request.onload = () => {
   if (request.status === 200) {
     const responseObject = JSON.parse(request.response); // spajanje na API
 
-    const h3Tittle = document - createElement(`h3`);
-    h3Tittle.innerText = rezultatRecept;
+    // traženje koktela
+    const coctailName = responseObject.drinks[0].strDrink;
+
+    // nova lista
+    const listNameDrink = document.createElement(`li`);
+    listNameDrink.innerText = coctailName;
   }
 };
+request.send();
 
 // može pisati bilo što -> handleSearchCoctails
 // na klik djeluje "pretraži" koji ima id add-btn, a zove se addBtn u JS
