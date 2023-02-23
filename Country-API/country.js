@@ -85,3 +85,10 @@ btnSearch.addEventListener("click", function () {
     countriesContainer.style.opacity = 1;
   });
 });
+
+const handleInputKey = (e) => {
+  if (e.key === "Enter") {
+    inputCountry();
+  }
+};
+display.addEventListener("keypress", handleInputKey);
