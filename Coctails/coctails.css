@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif, Arial, Helvetica;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+}
+
+.coctailImg {
+  display: block;
+  max-width: 12.5em;
+  margin: auto;
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  padding: 5%;
+  background-color: rgb(164, 98, 226);
+}
+
+.btnSearch img {
+  max-width: 150vh;
+  max-height: 3vh;
+}
+.btnSearch:hover {
+  cursor: pointer;
+}

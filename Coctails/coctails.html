@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kokteli</title>
+  </head>
+  <body>
+    <link rel="stylesheet" href="./coctails.css" />
+
+    <div class="container">
+      <input
+        class="myInput"
+        name="search"
+        placeholder="Type to search..."
+        type="text"
+      />
+      <button class="btnSearch" type="submit">
+        <img src="../multimedia/searchbar.png" />
+      </button>
+    </div>
+
+    <div class="coctailsContainer">
+      <div class="api-zahtjev">
+        <!--- <ol id="coctailList"></ol>  -->
+      </div>
+      <div class="coctailDetails"></div>
+    </div>
+
+    <script defer src="./coctails.js"></script>
+  </body>
+</html>
